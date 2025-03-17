@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 #Updates the current state of the server
 #Installs Nginx on the server
@@ -19,7 +20,7 @@ echo "server {
 	index index.html index.htm 404.html index.nginx-debian.html;
 	server_name _;
 	location /redirect_me {
-		return 301 https://www.youtube.com/watch?v=DFTSK6CnECk;
+		return 301 https://www.youtube.com/watch?v=H58vbez_m4E;
 	}
 	location /xyz {
 		return 404;
@@ -30,3 +31,4 @@ sudo chown -R root:root /var/www/html
 sudo chown -R root:root /etc/nginx/sites-available/default
 sudo service nginx restart
 sudo service nginx reload
+
